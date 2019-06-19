@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eux
-for e in Hopper-v2 Ant-v2 HalfCheetah-v2 Humanoid-v2 Reacher-v2 Walker2d-v2
+for e in RoboschoolHopper-v1 RoboschoolAnt-v1 RoboschoolHalfCheetah-v1 RoboschoolHumanoid-v1 RoboschoolReacher-v1 RoboschoolWalker2d-v1
 do
-    python run_expert.py experts/$e.pkl $e --render --num_rollouts=1
+    python run_expert.py experts/$e.py --render --num_rollouts=1
 done
